@@ -12,8 +12,10 @@ Used packege list
 
 ---
 
-
-![onboarding](./images/img_01.png)
+<p float="left">
+    <img src="https://github.com/keemeesuu/flutter-onboarding/blob/main/images/img_01.png"  width="32%" padding="10px" />
+    <img src="https://github.com/keemeesuu/flutter-onboarding/blob/main/images/img_02.png"  width="32%" padding="10px" />
+</p>
 
 <br>
 
