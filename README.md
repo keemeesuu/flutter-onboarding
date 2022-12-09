@@ -12,6 +12,8 @@ Used packege list
 
 ---
 
+![onboarding]('./images/main.png')
+
 <br>
 
 ## ✨ Introduce  
