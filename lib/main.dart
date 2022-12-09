@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-void main() {
+late SharedPreferences prefs;
+
+void main() async {
+  // main() 함수에서 async를 쓰려면 필요.
+  WidgetsFlutterBinding.ensureInitialized();
+
+  prefs = await SharedPreferences.getInstance();
+
   runApp(const MyApp());
 }
 
@@ -10,9 +18,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Try reading data from the 'onboarding' key. If it doesn't exist, returns null.
+    final bool? onboard = prefs.getBool('onboarding');
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OnBoardingPage(),
+      home: onboard == true ? Main() : OnBoardingPage(),
     );
   }
 }
@@ -50,9 +61,12 @@ class OnBoardingPage extends StatelessWidget {
       skip: const Text("Skip"),
       next: const Text("Next"),
       done: const Text("Done"),
-      onDone: () {
-        // On button pressed
-        Navigator.push(
+      onDone: () async {
+        // Save an boolean value to 'onboarding' key.
+        // onboarding 비활성화 : true
+        await prefs.setBool('onboarding', true);
+
+        Navigator.pushReplacement(
           context,
           MaterialPageRoute(
             builder: (context) => Main(),
@@ -73,7 +87,17 @@ class Main extends StatelessWidget {
         title: Text("Onboarding"),
       ),
       body: Center(
-        child: Text("hello world"),
+        child: Text("Hello World"),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () async {
+          // Save an boolean value to 'onboarding' key.
+          // onboarding 비활성화 : false
+          await prefs.setBool("onboarding", false);
+        },
+        backgroundColor: Colors.green,
+        label: Text("Onboarding 활성화"),
+        icon: Icon(Icons.restore_rounded),
       ),
     );
   }

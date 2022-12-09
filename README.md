@@ -15,22 +15,22 @@ Used packege list
 <br>
 
 ## Introduce  
-onboarding이란 어플을 소개 및 사용법을 알려주는 기능이다.  
-`introduction_screen` 이라는 패키지를 사용해 onboard 기능을 구현한다.  
-어플 실행시 한번만 보여주고 재시작하면 보여주면 안되서 한번 봤다는 값을 저장 할 방법이 필요하다.  
+Onboarding이란 어플 소개 및 사용법을 알려주는 기능이다.  
+`introduction_screen` 이라는 패키지를 사용해 Onboarding 기능을 구현한다.  
+어플 최초 실행시 한번만 보여주고 비활성화 시켜줘야 하기때문에 봤다는 값을 어느곳에 기록해야한다.  
 메모리가 아닌 다른 곳에 저장하는 기능중 하나인 파일저장 패키지인 `shared_preferences` 를 사용한다.
 
 <br>
 
 ## Point  
-1. 패키지 사용법
+1. 패키지 활용
 2. 메모리 저장이 아닌 기기에 데이터를 저장하는 방법 중 하나 알기
 
 <br>
 
 ## 기능 소개
-1. 어플을 소개하는 onboard 기능 구현
-    `introduction_screen` package 사용
+1. 어플을 소개하는 onboarding 기능 구현. `[introduction_screen](https://pub.dev/packages/introduction_screen` package 사용.
+    `[shared_preferences](https://pub.dev/packages/shared_preferences/example)` package 사용
 2. onboard 를 한번만 보여주고 안보이게 처리
     어플내에 소스코드를 저장시키기는 방법
 
