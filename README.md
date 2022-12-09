@@ -57,7 +57,7 @@ Flutter의 Package는 pugin 이라고도 불린다. 디버그 콘솔 pugin이 �
 2. 기기 데이터베이스에 저장하기
 3. 다른 컴퓨터에(서버)에 저장하기
 
-### 메모리가 아닌 다른 곳에 저장하는 법
+### 메모리가 아닌 다른 곳에 저장하는 방법들
 1. 기기에 파일로 저장하기
 내용을 파일로 저장하고 앱 시작시 파일을 읽어오는 방식  
 (패키지 : [shared_preferences](https://pub.dev/packages/shared_preferences/example))
