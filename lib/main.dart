@@ -19,11 +19,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Try reading data from the 'onboarding' key. If it doesn't exist, returns null.
-    final bool? onboard = prefs.getBool('onboarding');
+    // isOnboarded 값이 null을 반환하는경우 false 할당
+    bool isOnboarded = prefs.getBool('isOnboarded') ?? false;
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: onboard == true ? Main() : OnBoardingPage(),
+      home: isOnboarded ? HomePage() : OnBoardingPage(),
     );
   }
 }
@@ -64,12 +65,12 @@ class OnBoardingPage extends StatelessWidget {
       onDone: () async {
         // Save an boolean value to 'onboarding' key.
         // onboarding 비활성화 : true
-        await prefs.setBool('onboarding', true);
+        await prefs.setBool('isOnboarded', true);
 
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => Main(),
+            builder: (context) => HomePage(),
           ),
         );
       },
@@ -77,14 +78,14 @@ class OnBoardingPage extends StatelessWidget {
   }
 }
 
-class Main extends StatelessWidget {
-  const Main({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Onboarding"),
+        title: Text("HomePage"),
       ),
       body: Center(
         child: Text("Hello World"),
@@ -93,7 +94,10 @@ class Main extends StatelessWidget {
         onPressed: () async {
           // Save an boolean value to 'onboarding' key.
           // onboarding 비활성화 : false
-          await prefs.setBool("onboarding", false);
+          await prefs.setBool("isOnboarded", false);
+
+          // 아래와 같이 SharedPreferences에 저장된 모든 데이터를 삭제할 수 있다.
+          // prefs.clear();
         },
         backgroundColor: Colors.green,
         label: Text("Onboarding 활성화 하기"),
