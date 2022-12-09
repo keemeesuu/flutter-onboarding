@@ -13,7 +13,7 @@ Used packege list
 ---
 
 
-![onboarding](./images/main.png)
+![onboarding](./images/img_01.png)
 
 <br>
 
