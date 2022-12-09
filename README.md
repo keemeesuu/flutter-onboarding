@@ -12,7 +12,8 @@ Used packege list
 
 ---
 
-![onboarding]('./images/main.png')
+
+![onboarding](./images/main.png)
 
 <br>
 
