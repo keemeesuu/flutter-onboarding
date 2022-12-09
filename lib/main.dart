@@ -96,7 +96,7 @@ class Main extends StatelessWidget {
           await prefs.setBool("onboarding", false);
         },
         backgroundColor: Colors.green,
-        label: Text("Onboarding 활성화"),
+        label: Text("Onboarding 활성화 하기"),
         icon: Icon(Icons.restore_rounded),
       ),
     );
