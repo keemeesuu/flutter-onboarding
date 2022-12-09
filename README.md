@@ -37,12 +37,12 @@ Onboarding이란 어플 소개 및 사용법을 알려주는 기능이다.
 1. 어플을 소개하는 onboarding 기능 구현.  
     [introduction_screen](https://pub.dev/packages/introduction_screen) package 사용.
 2. onboard 를 한번만 보여주고 안보이게 처리  
-    어플내에 소스코드를 저장시키기는 방법  
+    버튼으로 다시 onboard 살리기  
     [shared_preferences](https://pub.dev/packages/shared_preferences/example) package 사용
 
 <br>
 
-## ✨ 기록 - 정리할 기능 및 용어
+## ✨ 기록
 
 ### Navigation  
 - Flutter에서 screen 과 page 는 route 로 불린다.
