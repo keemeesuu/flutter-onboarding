@@ -23,6 +23,8 @@ onboarding이라는 패키지를 사용해 onboard 기능을 구현하며 shared
 1. 패키지 사용법
 2. 메모리 저장이 아닌 기기에 데이터를 저장하는 방법 중 하나 알기
 
+<br>
+
 ## 기능 소개
 1. 어플을 소개하는 onboard 기능 구현
     `introduction_screen` package 사용
