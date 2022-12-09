@@ -40,7 +40,8 @@ onboarding이라는 패키지를 사용해 onboard 기능을 구현하며 shared
 - Navigator.push()를 사용하여 두 번째 route로 전환합니다.
 - Navigator.pop()을 사용하여 첫 번째 route로 되돌아 옵니다.
 
-### Flutter의 Package는 pugin 이라고도 불린다. 디버그 콘솔 pugin이 뜬다고 어리둥절X.
+### Package  
+Flutter의 Package는 pugin 이라고도 불린다. 디버그 콘솔 pugin이 뜬다고 어리둥절X.
 
 ### 데이터를 메모리가 아닌 다른 곳에 저장해 앱을 재시작 해도 이전 데이터를 유지하는 방법  
 1. 기기에 파일로 저장하기
