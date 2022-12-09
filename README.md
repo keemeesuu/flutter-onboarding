@@ -13,8 +13,11 @@ Used packege list
 ---
 
 <p float="left">
-    <img src="https://github.com/keemeesuu/flutter-onboarding/blob/main/images/img_01.png"  width="32%" style="margin-right: 10px" />
-    <img src="https://github.com/keemeesuu/flutter-onboarding/blob/main/images/img_02.png"  width="32%" />
+    <img src="https://github.com/keemeesuu/flutter-onboarding/blob/main/images/img_01.png"  width="28%" />
+    <img src="https://github.com/keemeesuu/flutter-onboarding/blob/main/images/img_02.png"  width="28%" />
+    <img src="https://github.com/keemeesuu/flutter-onboarding/blob/main/images/img_02.png"  width="28%" />
+    <img src="https://github.com/keemeesuu/flutter-onboarding/blob/main/images/img_02.png"  width="28%" />
+    <img src="https://github.com/keemeesuu/flutter-onboarding/blob/main/images/img_02.png"  width="28%" />
 </p>
 
 <br>
