@@ -14,7 +14,7 @@ Used packege list
 
 <br>
 
-## Introduce  
+## ✨ Introduce  
 Onboarding이란 어플 소개 및 사용법을 알려주는 기능이다.  
 `introduction_screen` 이라는 패키지를 사용해 Onboarding 기능을 구현한다.  
 어플 최초 실행시 한번만 보여주고 비활성화 시켜줘야 하기때문에 봤다는 값을 어느곳에 기록해야한다.  
@@ -22,13 +22,13 @@ Onboarding이란 어플 소개 및 사용법을 알려주는 기능이다.
 
 <br>
 
-## Point  
+## ✨ Point  
 1. 패키지 활용
 2. 메모리 저장이 아닌 기기에 데이터를 저장하는 방법 중 하나 알기
 
 <br>
 
-## 기능 소개
+## ✨ 기능 소개
 1. 어플을 소개하는 onboarding 기능 구현.  
     [introduction_screen](https://pub.dev/packages/introduction_screen) package 사용.
 2. onboard 를 한번만 보여주고 안보이게 처리  
@@ -37,7 +37,7 @@ Onboarding이란 어플 소개 및 사용법을 알려주는 기능이다.
 
 <br>
 
-## 기록 - 정리할 기능 및 용어
+## ✨ 기록 - 정리할 기능 및 용어
 
 ### Navigation  
 - Flutter에서 screen 과 page 는 route 로 불린다.
